@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 def tokenisasi():
-    data = pd.read_csv('C:/Users/Asus/projek-teks-transformers/klasifikasi-transformers/depresi (3).csv')
+    data = pd.read_csv('depresi (3).csv')
     data.text = data.text.astype(str)
     text = data['text']
     tokenizer = Tokenizer(num_words=10000, oov_token='<UNK>')
